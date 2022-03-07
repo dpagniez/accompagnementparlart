@@ -12,13 +12,11 @@
 body {
   display: flex;
   justify-content: center;
-  
 }
 #page-container {
   margin: 30px 200px;
   max-width: 1440px;
 }
-
 
 h1,
 h2,
@@ -43,58 +41,57 @@ header ul {
 }
 header li {
   margin: 0 10px;
-  
 }
 header a {
-    font-weight: 700;
-    transition: 300ms;
+  font-weight: 700;
+  transition: 300ms;
 }
 header a:hover {
-    color: var(--hover-color);
+  color: var(--hover-color);
 }
 header p {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 header h1 {
-    color: var(--hover-color);
+  color: var(--hover-color);
 }
 img {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 section {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
- .presentation-text {
-    margin-left: 50px;
-    width: 50%;
+.presentation-text {
+  margin-left: 50px;
+  width: 50%;
 }
 .presentation-text h2 {
-margin-bottom: 20px;
-color:var(--hover-color)
+  margin-bottom: 20px;
+  color: var(--hover-color);
 }
 .presentation-pic {
-    height: 325px;
+  height: 325px;
 }
 .bold {
-    font-weight: 700;
-    color: var(--hover-color);
+  font-weight: 700;
+  color: var(--hover-color);
 }
 #concept {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 .concept-pic {
-    height: 300px;
+  height: 300px;
 }
 .concept-text {
-    width: 50%;
-    margin-right: 50px;
+  width: 50%;
+  margin-right: 50px;
 }
 .concept-text h2 {
-    margin-bottom: 20px;
-    color: var(--hover-color);
+  margin-bottom: 20px;
+  color: var(--hover-color);
 }
 
 #contact {
@@ -107,22 +104,87 @@ color:var(--hover-color)
   color: var(--hover-color);
 }
 
-.slider {
-  height: 300px;
-  position: relative;
-  overflow: hidden;
+@media (max-width: 1400px) {
+  #page-container {
+    margin: 30px 80px;
+  }
 }
 
-.slider ul {
-  position: relative;
-  height: 100%;
-  width: 10000%;
-  padding: 0;
-  margin: 0;
-  transition: all 750ms ease;
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+  }
+  header ul {
+    margin-left: 0;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  header li {
+    margin: 0 10px 0 0;
+  }
+  #presentation {
+    flex-direction: column-reverse;
+  }
+
+  .presentation-text {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .presentation-pic {
+    margin-top: 80px;
+  }
+  #concept {
+    flex-direction: column;
+  }
+  .concept-text {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 80px;
+  }
 }
 
-.slider li {
-  position: relative;
-  height: 100%;
+@media (max-width: 556px) {
+  #page-container {
+    margin: 15px;
+  }
+  header {
+    margin-bottom: 21px;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  header p {
+    font-size: 15px;
+  }
+
+  header a {
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  section p {
+    font-size: 14px;
+  }
+  .presentation-pic {
+    margin-top: 33px;
+    max-width: 300px;
+    height: auto;
+  }
+  #concept {
+    margin-top: 40px;
+  }
+  #contact {
+    margin-top: 40px;
+  }
+  .concept-pic {
+    max-width: 300px;
+    height: auto;
+  }
+  .concept-text {
+    margin-bottom: 37px;
+  }
 }
